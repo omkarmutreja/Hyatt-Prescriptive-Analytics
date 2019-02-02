@@ -48,3 +48,32 @@ The focus is to improve the services provided by the Hyatt hotels to facilitate 
 
 ## Data Identification:
 The survey data of November 2014, December 2014 and January 2015 have 1151316 customer data with around 78 relevant attributes of the hotel. 
+
+## Data Preprocessing:
+This survey data has null values which will possibly create a hindrance to obtain accurate trends. Omitting the NA values is not advisable as we may lose out on important trends. Initially, all the null values are replaced with blank values and then replaced with the string ‘NA’. But the best idea is to remove the NA values ‘Likelihood to Recommend’ and ‘NPS_Type’ as they are the key factors for this recommendation analysis. By doing this we drill down to 185091 customer data instances. 
+
+## Descriptive Statistics:
+Descriptive statistics are used to describe the basic features of the data in a study. They provide simple summaries about the sample and the measures. Together with simple graphics analysis, they form the basis of virtually every quantitative analysis of data. 
+
+## Recommendation Analysis:
+### Modeling Techniques:
+Instead of query based approach, we focused on model based approach and we started with linear regression model. We performed linear modeling with dependent variables Likelihood_Recommend_H and secondly NPS_Type.
+Linear Modeling to understand and predict the behavior of customers based ‘Likelihood to Recommend’. Initially we chose a few relevant variables according to the descriptive analysis and kept performing linear modeling until we obtained statistically relevant independent variables.
+
+Apriori Algorithm is a data mining algorithm for mining frequent combination of services and facilities which specifically caters to customer preferences.
+
+SVM: Machine learning algorithms like Support Vector Machines (SVM) are used to implement supervised learning of data for classification and prediction. SVM facilities the identification of a combination of services and facilities which will create a positive, neutral, and negative customer experience.
+
+## Interactive Data Visualization:
+The graphs and charts created in R is not interactive hence we implemented Shiny apps for the same. 
+
+## Conclusion:
+1) To improve customer feedback from detractors, the hotel must focus on improving the services and facilities which have been proven to significantly influence customer feedback
+2) Services must be packaged and promoted in a combination of Guest Rooms, Tranquility, Hotel Condition, Customer Satisfaction, Staff cared, and Internet Usage tailored to specific class and category of customers
+3) Hyatt Hotel in El Segundo City of California should make significant improvements by providing better staff services to customers
+4) The Hotel should focus on maintaining a high standard for Hotel Rooms and Hotel Conditions
+5) Room upgrades, premium internet services, and personal staff could be provided to frequent customers with detractor and passive ratings
+6) Restaurants and cafes significantly influence customer feedback towards the hotel; Survey forms and feedback questionnaire could be filled up to customize food and bar menu 
+7) Special rules must be set-up to ensure noise free environment and tranquility of customers 
+
+
